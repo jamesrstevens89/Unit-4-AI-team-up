@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Sets the default font for the page */
+    background-color: #f4f4f4; /* Light gray background color */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Text color */
+}
+
+/* Center all headers */
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center; /* Center all heading elements */
+}
+
+/* Navigation Bar Section */
+nav {
+    background-color: #34495e; /* Darker background for the navigation bar */
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white; /* Link color */
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #16a085; /* Changes background color when hovering over links */
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Resource Cards Section (Side by Side Layout) */
+.resource-card-container {
+    display: flex; /* Use flexbox to display cards side by side */
+    justify-content: space-between; /* Distribute cards evenly */
+    gap: 20px; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next row on smaller screens */
+}
+
+/* Individual Resource Cards */
+.resource-card {
+    background-color: white; /* White background for the cards */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a soft shadow to the cards */
+    text-align: center;
+    width: 23%; /* Set the width of each card, ensuring they fit side by side */
+    border-radius: 8px; /* Rounded corners for the cards */
+    transition: transform 0.3s ease; /* Smooth transform on hover */
+}
+
+/* Hover Effect on Resource Cards */
+.resource-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Title and Description Styles */
+.resource-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.resource-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* "Learn More" Link Styles */
+.resource-card a {
+    background-color: #16a085;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.resource-card a:hover {
+    background-color: #1abc9c; /* Darker hover effect */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
